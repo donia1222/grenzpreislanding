@@ -1,0 +1,102 @@
+"use client"
+
+import { CheckCircle2, TrendingDown } from "lucide-react"
+import Link from "next/link"
+import { useLang } from "@/contexts/LanguageContext"
+import { landingTranslations } from "@/app/landing-translations"
+
+const partners = [
+  { name: "Deutschland", flag: "🇩🇪", offers: "bis 40%" },
+  { name: "Österreich",  flag: "🇦🇹", offers: "bis 35%" },
+]
+
+export function HeroSection() {
+  const { lang } = useLang()
+  const t = landingTranslations[lang].hero
+
+  return (
+    <section className="relative min-h-screen pt-32 pb-16 overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+      />
+      <div className="absolute inset-0 bg-white/35" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[calc(100vh-120px)]">
+
+          <div className="bg-white/70 backdrop-blur-lg border border-white/80 rounded-3xl p-8 sm:p-10 space-y-8 shadow-2xl shadow-black/10"
+            style={{ animation: "fadeUp 0.7s ease both", animationDelay: "0.1s" }}>
+            <div className="space-y-5">
+              <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-[1.1] tracking-tight text-balance">
+                {t.title1}{" "}
+                <span className="text-primary">{t.title2}</span>
+              </h1>
+              <p className="text-lg sm:text-xl text-foreground/70 leading-relaxed">
+                {t.subtitle}
+              </p>
+            </div>
+
+            <div className="flex flex-row gap-3">
+              <Link href="#cta">
+                <img src="/shops/apple.png" alt="App Store" className="h-16 w-auto object-contain hover:opacity-80 transition-opacity rounded-[10px]" />
+              </Link>
+              <Link href="#cta">
+                <img src="/shops/google.png" alt="Google Play" className="h-16 w-auto object-contain hover:opacity-80 transition-opacity rounded-[10px]" />
+              </Link>
+            </div>
+
+            <div className="flex flex-wrap gap-2">
+              {t.chips.map((chip) => (
+                <div
+                  key={chip}
+                  className="inline-flex items-center gap-1.5 bg-primary/8 border border-primary/20 text-primary text-sm font-semibold rounded-full px-4 py-1.5"
+                >
+                  <CheckCircle2 className="w-3.5 h-3.5 text-primary" />
+                  {chip}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-md space-y-4">
+              <div className="absolute inset-0 bg-primary/5 rounded-3xl blur-3xl scale-105 -z-10" />
+
+              {partners.map((partner, i) => (
+                <div
+                  key={partner.name}
+                  className="bg-white/90 backdrop-blur-sm border border-border/50 rounded-2xl px-6 py-5 flex items-center justify-between shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                  style={{ animation: "fadeUp 0.7s ease both", animationDelay: `${0.4 + i * 0.15}s` }}
+                >
+                  <div className="flex items-center gap-2">
+                    <span className="text-3xl">{partner.flag}</span>
+                    <span className="font-[family-name:var(--font-display)] font-bold text-base text-foreground">{partner.name}</span>
+                  </div>
+                  <div className="flex items-center gap-2 bg-primary/8 border border-primary/15 rounded-full px-3 py-1.5">
+                    <TrendingDown className="w-3.5 h-3.5 text-primary" />
+                    <span className="text-xs font-semibold text-primary">{partner.offers} {t.offersPerWeek}</span>
+                  </div>
+                </div>
+              ))}
+
+              <div className="bg-primary rounded-2xl px-6 py-5 flex items-center justify-between shadow-lg shadow-primary/25"
+                style={{ animation: "fadeUp 0.7s ease both", animationDelay: "0.85s" }}>
+                <div>
+                  <div className="text-primary-foreground font-[family-name:var(--font-display)] font-bold text-lg">
+                    {t.totalOffers}
+                  </div>
+                  <div className="text-primary-foreground/70 text-sm">{t.updatedWeekly}</div>
+                </div>
+                <div className="w-12 h-12 rounded-xl bg-white/15 flex items-center justify-center overflow-hidden">
+                  <img src="/grenzpreis/imageslanding/icon.png" alt="GrenzPreis" className="w-9 h-9 object-contain" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  )
+}

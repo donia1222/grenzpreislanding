@@ -33,7 +33,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "Grenzpreisrechner.",
       subtitle: "Kein Rätselraten mehr. GrenzPreis zeigt dir auf den Rappen genau, ob sich die Fahrt nach Deutschland oder Österreich wirklich lohnt.",
       items: [
-        { title: "Preise vergleichen — CH vs. DE & AT", description: "Suche nach Produkten und sieh sofort, wie viel du im Ausland sparst. Echte Preise von Lidl, Rewe, Aldi und Hofer — direkt verglichen mit Migros und Coop." },
+        { title: "Preise vergleichen — CH vs. DE & AT", description: "Suche nach Produkten und sieh sofort, wie viel du im Ausland sparst. KI-geschätzte Preise von deutschen und österreichischen Supermärkten — direkt verglichen mit Schweizer Supermarktpreisen." },
         { title: "Echte Ersparnis berechnen", description: "GrenzPreis zieht Benzinkosten, Mehrwertsteuer und Zollfreibeträge ab — damit du weißt, wie viel du tatsächlich in der Tasche behältst." },
         { title: "Einkaufsliste erstellen", description: "Erstelle deine persönliche Einkaufsliste mit bis zu 20 Produkten. Wähle aus vorprogrammierten Kategorien oder suche mit KI nach aktuellen Preisen." },
         { title: "KI-Suche für aktuelle Preise", description: "Mit dem KI-Modus findet GrenzPreis aktuelle Preise direkt aus dem Internet — für eigene Produkte und Kategorien, die du selbst erstellen kannst." },
@@ -59,10 +59,10 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "Günstig einkaufen.",
       subtitle: "GrenzPreis vergleicht Preise bei den führenden Supermärkten in Deutschland und Österreich — vollständig und aktuell.",
       items: [
-        { name: "Deutschland 🇩🇪", description: "Vergleiche Preise bei Lidl, Aldi und Rewe — die günstigsten Supermärkte direkt hinter der deutschen Grenze. Spare bis zu 40 % gegenüber Schweizer Preisen." },
-        { name: "Österreich 🇦🇹", description: "Vergleiche Preise bei Hofer und anderen österreichischen Supermärkten. Ideal für Regionen im Vorarlberg und am Bodensee." },
+        { name: "Deutschland 🇩🇪", description: "Vergleiche Preise deutscher Supermärkte direkt hinter der Grenze. Spare bis zu 40 % gegenüber Schweizer Preisen." },
+        { name: "Österreich 🇦🇹", description: "Vergleiche Preise österreichischer Supermärkte. Ideal für Regionen im Vorarlberg und am Bodensee." },
       ],
-      thankYou: "GrenzPreis nutzt aktuelle Preisdaten aus DE & AT — alle Angaben dienen als Orientierung. Preise können variieren.",
+      thankYou: "GrenzPreis nutzt KI-geschätzte Preisdaten aus DE & AT — alle Angaben dienen als Orientierung. Tatsächliche Preise im Laden können abweichen.",
     },
     categories: {
       badge: "Kategorien",
@@ -90,7 +90,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       items: [
         { question: "Ist die App wirklich kostenlos?", answer: "Ja, GrenzPreis ist vollständig kostenlos. Kein Abo, keine versteckten Kosten, keine Werbung." },
         { question: "Welche Länder werden verglichen?", answer: "GrenzPreis vergleicht Supermarktpreise in der Schweiz, Deutschland und Österreich — inklusive Benzin, Mehrwertsteuer und Zollfreibeträgen." },
-        { question: "Wie genau sind die Preise?", answer: "Im Standard-Modus nutzt GrenzPreis vorprogrammierte Durchschnittspreise. Im KI-Modus werden aktuelle Preise direkt aus dem Internet abgerufen — für noch genauere Ergebnisse." },
+        { question: "Wie genau sind die Preise?", answer: "Alle Preise sind KI-geschätzte Richtwerte — keine offiziellen Preise der Supermärkte. Im Standard-Modus nutzt GrenzPreis vorprogrammierte Durchschnittswerte, im KI-Modus werden tagesaktuelle Schätzungen erstellt. Die tatsächlichen Preise im Laden können abweichen." },
         { question: "Wie wird die Benzinersparnis berechnet?", answer: "Du gibst deinen Kraftstoffverbrauch und den aktuellen Preis ein. GrenzPreis berechnet die Benzinkosten für die Hin- und Rückfahrt automatisch und zieht sie von der Bruttoersparnis ab." },
         { question: "Was ist der Zollfreibetrag?", answer: "Schweizer können bis zu 300 CHF Waren pro Person zollfrei einführen. Bei 2 Personen sind es 600 CHF, bei Familien bis zu 1.200 CHF. GrenzPreis berechnet dies automatisch." },
         { question: "Gibt es eine Android-Version?", answer: "Die App ist aktuell für iOS verfügbar. Eine Android-Version ist in Entwicklung und wird bald im Google Play Store erhältlich sein." },
@@ -144,7 +144,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "de precios fronterizos.",
       subtitle: "Sin más dudas. GrenzPreis te muestra al céntimo si vale la pena el viaje a Alemania o Austria.",
       items: [
-        { title: "Comparar precios — CH vs. DE & AT", description: "Busca productos y ve al instante cuánto ahorras en el extranjero. Precios reales de Lidl, Rewe, Aldi y Hofer — comparados directamente con Migros y Coop." },
+        { title: "Comparar precios — CH vs. DE & AT", description: "Busca productos y ve al instante cuánto ahorras en el extranjero. Precios estimados por IA de supermercados alemanes y austríacos — comparados directamente con los precios de supermercados suizos." },
         { title: "Calcular el ahorro real", description: "GrenzPreis descuenta los costes de gasolina, el IVA y las franquicias aduaneras — para que sepas exactamente cuánto te quedas en el bolsillo." },
         { title: "Crear lista de la compra", description: "Crea tu lista personal con hasta 20 productos. Elige entre categorías preprogramadas o busca precios actuales con IA." },
         { title: "Búsqueda con IA", description: "Con el modo IA, GrenzPreis busca precios actuales directamente en internet — para tus propios productos y categorías personalizadas." },
@@ -170,10 +170,10 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "Comprar más barato.",
       subtitle: "GrenzPreis compara precios en los principales supermercados de Alemania y Austria — completo y actualizado.",
       items: [
-        { name: "Alemania 🇩🇪", description: "Compara precios en Lidl, Aldi y Rewe — los supermercados más baratos justo al otro lado de la frontera alemana. Ahorra hasta un 40 % respecto a los precios suizos." },
-        { name: "Austria 🇦🇹", description: "Compara precios en Hofer y otros supermercados austríacos. Ideal para regiones de Vorarlberg y el lago Constanza." },
+        { name: "Alemania 🇩🇪", description: "Compara precios de supermercados alemanes justo al otro lado de la frontera. Ahorra hasta un 40 % respecto a los precios suizos." },
+        { name: "Austria 🇦🇹", description: "Compara precios de supermercados austríacos. Ideal para regiones de Vorarlberg y el lago Constanza." },
       ],
-      thankYou: "GrenzPreis utiliza datos de precios actuales de DE y AT — todos los datos son orientativos. Los precios pueden variar.",
+      thankYou: "GrenzPreis utiliza precios estimados por IA de DE y AT — todos los datos son orientativos. Los precios reales en tienda pueden variar.",
     },
     categories: {
       badge: "Categorías",
@@ -201,7 +201,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       items: [
         { question: "¿La app es realmente gratuita?", answer: "Sí, GrenzPreis es completamente gratuito. Sin suscripción, sin costes ocultos, sin publicidad." },
         { question: "¿Qué países se comparan?", answer: "GrenzPreis compara precios de supermercados en Suiza, Alemania y Austria — incluyendo gasolina, IVA y franquicias aduaneras." },
-        { question: "¿Qué precisión tienen los precios?", answer: "En modo estándar, GrenzPreis usa precios medios preprogramados. En modo IA, se obtienen precios actuales directamente de internet — para resultados aún más precisos." },
+        { question: "¿Qué precisión tienen los precios?", answer: "Todos los precios son estimaciones orientativas calculadas por IA — no son precios oficiales de los supermercados. En modo estándar GrenzPreis usa valores medios preprogramados; en modo IA se generan estimaciones actualizadas. Los precios reales en tienda pueden variar." },
         { question: "¿Cómo se calcula el ahorro en gasolina?", answer: "Introduces tu consumo de combustible y el precio actual. GrenzPreis calcula automáticamente el coste del viaje de ida y vuelta y lo descuenta del ahorro bruto." },
         { question: "¿Qué es la franquicia aduanera?", answer: "Los suizos pueden importar bienes por un valor de hasta 300 CHF por persona sin pagar aranceles. Con 2 personas son 600 CHF, con familias hasta 1.200 CHF. GrenzPreis lo calcula automáticamente." },
         { question: "¿Hay versión para Android?", answer: "La app está disponible actualmente para iOS. Una versión Android está en desarrollo y pronto estará disponible en Google Play Store." },
@@ -255,7 +255,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "de prix frontalier.",
       subtitle: "Plus de doutes. GrenzPreis vous montre au centime près si le voyage en Allemagne ou en Autriche vaut vraiment la peine.",
       items: [
-        { title: "Comparer les prix — CH vs. DE & AT", description: "Recherchez des produits et voyez instantanément combien vous économisez à l'étranger. Prix réels de Lidl, Rewe, Aldi et Hofer — comparés directement à Migros et Coop." },
+        { title: "Comparer les prix — CH vs. DE & AT", description: "Recherchez des produits et voyez instantanément combien vous économisez à l'étranger. Prix estimés par IA des supermarchés allemands et autrichiens — comparés directement aux prix des supermarchés suisses." },
         { title: "Calculer l'économie réelle", description: "GrenzPreis déduit les coûts d'essence, la TVA et les franchises douanières — pour que vous sachiez exactement ce que vous gardez dans votre poche." },
         { title: "Créer une liste de courses", description: "Créez votre liste personnelle avec jusqu'à 20 produits. Choisissez parmi des catégories préprogrammées ou recherchez les prix actuels avec l'IA." },
         { title: "Recherche par IA", description: "Avec le mode IA, GrenzPreis trouve les prix actuels directement sur internet — pour vos propres produits et catégories personnalisées." },
@@ -281,10 +281,10 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "Acheter moins cher.",
       subtitle: "GrenzPreis compare les prix dans les principaux supermarchés d'Allemagne et d'Autriche — complet et à jour.",
       items: [
-        { name: "Allemagne 🇩🇪", description: "Comparez les prix chez Lidl, Aldi et Rewe — les supermarchés les moins chers juste de l'autre côté de la frontière allemande. Économisez jusqu'à 40 % par rapport aux prix suisses." },
-        { name: "Autriche 🇦🇹", description: "Comparez les prix chez Hofer et d'autres supermarchés autrichiens. Idéal pour les régions du Vorarlberg et du lac de Constance." },
+        { name: "Allemagne 🇩🇪", description: "Comparez les prix des supermarchés allemands juste de l'autre côté de la frontière. Économisez jusqu'à 40 % par rapport aux prix suisses." },
+        { name: "Autriche 🇦🇹", description: "Comparez les prix des supermarchés autrichiens. Idéal pour les régions du Vorarlberg et du lac de Constance." },
       ],
-      thankYou: "GrenzPreis utilise des données de prix actuelles de DE et AT — toutes les données sont indicatives. Les prix peuvent varier.",
+      thankYou: "GrenzPreis utilise des prix estimés par IA pour DE et AT — toutes les données sont indicatives. Les prix réels en magasin peuvent varier.",
     },
     categories: {
       badge: "Catégories",
@@ -312,7 +312,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       items: [
         { question: "L'app est-elle vraiment gratuite?", answer: "Oui, GrenzPreis est entièrement gratuit. Pas d'abonnement, pas de coûts cachés, pas de publicité." },
         { question: "Quels pays sont comparés?", answer: "GrenzPreis compare les prix des supermarchés en Suisse, en Allemagne et en Autriche — y compris l'essence, la TVA et les franchises douanières." },
-        { question: "Quelle est la précision des prix?", answer: "En mode standard, GrenzPreis utilise des prix moyens préprogrammés. En mode IA, les prix actuels sont récupérés directement sur internet — pour des résultats encore plus précis." },
+        { question: "Quelle est la précision des prix?", answer: "Tous les prix sont des estimations indicatives calculées par IA — ce ne sont pas des prix officiels des supermarchés. En mode standard GrenzPreis utilise des moyennes préprogrammées, en mode IA des estimations actualisées sont générées. Les prix réels en magasin peuvent varier." },
         { question: "Comment l'économie en essence est-elle calculée?", answer: "Vous saisissez votre consommation de carburant et le prix actuel. GrenzPreis calcule automatiquement le coût du trajet aller-retour et le déduit de l'économie brute." },
         { question: "Qu'est-ce que la franchise douanière?", answer: "Les Suisses peuvent importer des marchandises jusqu'à 300 CHF par personne en franchise de droits. Avec 2 personnes, c'est 600 CHF, avec des familles jusqu'à 1.200 CHF. GrenzPreis le calcule automatiquement." },
         { question: "Y a-t-il une version Android?", answer: "L'app est actuellement disponible pour iOS. Une version Android est en cours de développement et sera bientôt disponible sur le Google Play Store." },
@@ -366,7 +366,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "di prezzi transfrontalieri.",
       subtitle: "Niente più dubbi. GrenzPreis ti mostra al centesimo se il viaggio in Germania o Austria vale davvero la pena.",
       items: [
-        { title: "Confrontare i prezzi — CH vs. DE & AT", description: "Cerca prodotti e vedi subito quanto risparmi all'estero. Prezzi reali di Lidl, Rewe, Aldi e Hofer — confrontati direttamente con Migros e Coop." },
+        { title: "Confrontare i prezzi — CH vs. DE & AT", description: "Cerca prodotti e vedi subito quanto risparmi all'estero. Prezzi stimati dall'IA dei supermercati tedeschi e austriaci — confrontati direttamente con i prezzi dei supermercati svizzeri." },
         { title: "Calcolare il risparmio reale", description: "GrenzPreis deduce i costi del carburante, l'IVA e le franchigie doganali — così sai esattamente quanto ti rimane in tasca." },
         { title: "Creare la lista della spesa", description: "Crea la tua lista personale con fino a 20 prodotti. Scegli tra categorie preprogrammate o cerca i prezzi attuali con l'IA." },
         { title: "Ricerca con IA", description: "Con la modalità IA, GrenzPreis trova i prezzi attuali direttamente da internet — per i tuoi prodotti e categorie personalizzate." },
@@ -392,10 +392,10 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "Fare la spesa risparmiando.",
       subtitle: "GrenzPreis confronta i prezzi nei principali supermercati di Germania e Austria — completo e aggiornato.",
       items: [
-        { name: "Germania 🇩🇪", description: "Confronta i prezzi da Lidl, Aldi e Rewe — i supermercati più economici appena oltre il confine tedesco. Risparmia fino al 40 % rispetto ai prezzi svizzeri." },
-        { name: "Austria 🇦🇹", description: "Confronta i prezzi da Hofer e altri supermercati austriaci. Ideale per le regioni del Vorarlberg e del Lago di Costanza." },
+        { name: "Germania 🇩🇪", description: "Confronta i prezzi dei supermercati tedeschi appena oltre il confine. Risparmia fino al 40 % rispetto ai prezzi svizzeri." },
+        { name: "Austria 🇦🇹", description: "Confronta i prezzi dei supermercati austriaci. Ideale per le regioni del Vorarlberg e del Lago di Costanza." },
       ],
-      thankYou: "GrenzPreis utilizza dati di prezzi attuali da DE e AT — tutti i dati sono indicativi. I prezzi possono variare.",
+      thankYou: "GrenzPreis utilizza prezzi stimati dall'IA per DE e AT — tutti i dati sono indicativi. I prezzi reali in negozio possono variare.",
     },
     categories: {
       badge: "Categorie",
@@ -423,7 +423,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       items: [
         { question: "L'app è davvero gratuita?", answer: "Sì, GrenzPreis è completamente gratuito. Nessun abbonamento, nessun costo nascosto, nessuna pubblicità." },
         { question: "Quali paesi vengono confrontati?", answer: "GrenzPreis confronta i prezzi dei supermercati in Svizzera, Germania e Austria — inclusi carburante, IVA e franchigie doganali." },
-        { question: "Quanto sono precisi i prezzi?", answer: "In modalità standard, GrenzPreis utilizza prezzi medi preprogrammati. In modalità IA, i prezzi attuali vengono recuperati direttamente da internet — per risultati ancora più precisi." },
+        { question: "Quanto sono precisi i prezzi?", answer: "Tutti i prezzi sono stime indicative calcolate dall'IA — non sono prezzi ufficiali dei supermercati. In modalità standard GrenzPreis usa medie preprogrammate, in modalità IA vengono generate stime aggiornate. I prezzi reali in negozio possono variare." },
         { question: "Come viene calcolato il risparmio sul carburante?", answer: "Inserisci il consumo di carburante e il prezzo attuale. GrenzPreis calcola automaticamente il costo del viaggio di andata e ritorno e lo deduce dal risparmio lordo." },
         { question: "Cos'è la franchigia doganale?", answer: "Gli svizzeri possono importare merci fino a 300 CHF per persona in esenzione da dazi. Con 2 persone sono 600 CHF, con famiglie fino a 1.200 CHF. GrenzPreis lo calcola automaticamente." },
         { question: "Esiste una versione Android?", answer: "L'app è attualmente disponibile per iOS. Una versione Android è in sviluppo e sarà presto disponibile sul Google Play Store." },
@@ -477,7 +477,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "border price calculator.",
       subtitle: "No more guessing. GrenzPreis shows you to the cent whether the trip to Germany or Austria is really worth it.",
       items: [
-        { title: "Compare prices — CH vs. DE & AT", description: "Search for products and instantly see how much you save abroad. Real prices from Lidl, Rewe, Aldi and Hofer — compared directly with Migros and Coop." },
+        { title: "Compare prices — CH vs. DE & AT", description: "Search for products and instantly see how much you save abroad. AI-estimated prices from German and Austrian supermarkets — compared directly with Swiss supermarket prices." },
         { title: "Calculate real savings", description: "GrenzPreis deducts fuel costs, VAT and customs allowances — so you know exactly how much stays in your pocket." },
         { title: "Create a shopping list", description: "Create your personal shopping list with up to 20 products. Choose from pre-programmed categories or search for current prices with AI." },
         { title: "AI search for current prices", description: "With AI mode, GrenzPreis finds current prices directly from the internet — for your own products and custom categories you can create yourself." },
@@ -503,10 +503,10 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "Shop cheaper.",
       subtitle: "GrenzPreis compares prices at the leading supermarkets in Germany and Austria — complete and up to date.",
       items: [
-        { name: "Germany 🇩🇪", description: "Compare prices at Lidl, Aldi and Rewe — the cheapest supermarkets just across the German border. Save up to 40 % compared to Swiss prices." },
-        { name: "Austria 🇦🇹", description: "Compare prices at Hofer and other Austrian supermarkets. Ideal for regions in Vorarlberg and on Lake Constance." },
+        { name: "Germany 🇩🇪", description: "Compare prices at German supermarkets just across the border. Save up to 40 % compared to Swiss prices." },
+        { name: "Austria 🇦🇹", description: "Compare prices at Austrian supermarkets. Ideal for regions in Vorarlberg and on Lake Constance." },
       ],
-      thankYou: "GrenzPreis uses current price data from DE & AT — all figures are for guidance only. Prices may vary.",
+      thankYou: "GrenzPreis uses AI-estimated price data from DE & AT — all figures are for guidance only. Actual in-store prices may vary.",
     },
     categories: {
       badge: "Categories",
@@ -534,7 +534,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       items: [
         { question: "Is the app really free?", answer: "Yes, GrenzPreis is completely free. No subscription, no hidden costs, no ads." },
         { question: "Which countries are compared?", answer: "GrenzPreis compares supermarket prices in Switzerland, Germany and Austria — including fuel, VAT and customs allowances." },
-        { question: "How accurate are the prices?", answer: "In standard mode, GrenzPreis uses pre-programmed average prices. In AI mode, current prices are fetched directly from the internet — for even more accurate results." },
+        { question: "How accurate are the prices?", answer: "All prices are AI-estimated guidance values — not official supermarket prices. In standard mode GrenzPreis uses pre-programmed averages; in AI mode up-to-date estimates are generated. Actual in-store prices may vary." },
         { question: "How is the fuel saving calculated?", answer: "You enter your fuel consumption and the current price. GrenzPreis automatically calculates the round-trip fuel cost and deducts it from the gross savings." },
         { question: "What is the customs allowance?", answer: "Swiss residents can import goods up to CHF 300 per person duty-free. With 2 people it's CHF 600, with families up to CHF 1,200. GrenzPreis calculates this automatically." },
         { question: "Is there an Android version?", answer: "The app is currently available for iOS. An Android version is in development and will soon be available on the Google Play Store." },

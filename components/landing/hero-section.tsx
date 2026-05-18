@@ -6,8 +6,8 @@ import { useLang } from "@/contexts/LanguageContext"
 import { landingTranslations } from "@/app/landing-translations"
 
 const partners = [
-  { name: "Deutschland", flag: "🇩🇪", offers: "bis 40%" },
-  { name: "Österreich",  flag: "🇦🇹", offers: "bis 35%" },
+  { name: "Deutschland", flag: "🇩🇪" },
+  { name: "Österreich",  flag: "🇦🇹" },
 ]
 
 export function HeroSection() {
@@ -75,7 +75,7 @@ export function HeroSection() {
                   </div>
                   <div className="flex items-center gap-2 bg-primary/8 border border-primary/15 rounded-full px-3 py-1.5">
                     <TrendingDown className="w-3.5 h-3.5 text-primary" />
-                    <span className="text-xs font-semibold text-primary">{partner.offers} {t.offersPerWeek}</span>
+                    <span className="text-xs font-semibold text-primary">{t.offersPerWeek}</span>
                   </div>
                 </div>
               ))}

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { CookieBanner } from '@/components/cookie-banner'
-import { DevModal } from '@/components/dev-modal'
+
 import { LanguageProvider } from '@/contexts/LanguageContext'
 import './globals.css'
 
@@ -132,7 +132,7 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         <LanguageProvider>
           {children}
-          <DevModal />
+
           <CookieBanner />
           {process.env.NODE_ENV === 'production' && <Analytics />}
         </LanguageProvider>

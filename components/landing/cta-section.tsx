@@ -13,8 +13,11 @@ export function CTASection() {
 
   return (
     <section ref={ref as any} id="cta" className="py-20 sm:py-28 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-primary/4 to-accent/5" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-primary/6 rounded-full blur-3xl" />
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/4e105a96-ab96-4cda-8f83-d52ac268d7da.png')" }}
+      />
+      <div className="absolute inset-0 bg-white/70" />
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="font-[family-name:var(--font-display)] text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4 text-balance" style={fi(inView, 0)}>

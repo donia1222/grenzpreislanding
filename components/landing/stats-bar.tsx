@@ -1,6 +1,6 @@
 "use client"
 
-import { Store, Tag, Sparkles, Globe } from "lucide-react"
+import { Store, Tag, Globe } from "lucide-react"
 import { useLang } from "@/contexts/LanguageContext"
 import { landingTranslations } from "@/app/landing-translations"
 import { useInView, fi } from "@/hooks/use-in-view"
@@ -13,7 +13,6 @@ export function StatsBar() {
   const stats = [
     { Icon: Store,    value: "3",          label: t.storesLabel },
     { Icon: Tag,      value: "30%+",       label: t.offersLabel  },
-    { Icon: Sparkles, value: t.freeValue,  label: t.freeLabel    },
     { Icon: Globe,    value: "5",          label: t.langLabel    },
   ]
 
@@ -23,7 +22,7 @@ export function StatsBar() {
       <div className="absolute top-0 right-1/4 w-56 h-24 bg-primary/10 rounded-full blur-2xl animate-pulse [animation-delay:1.5s]" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-primary/20">
+        <div className="grid grid-cols-3 divide-x divide-primary/20">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col items-center text-center gap-2.5 px-6 py-4" style={fi(inView, index)}>
               <div className="w-10 h-10 rounded-xl bg-primary/12 flex items-center justify-center">

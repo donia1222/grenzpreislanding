@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Datenschutz — Offerto PROFI",
+  title: "Datenschutz — GrenzPreis",
 }
 
 export default function DatenschutzPage() {
@@ -15,60 +15,107 @@ export default function DatenschutzPage() {
         </Link>
 
         <h1 className="font-bold text-3xl text-foreground mb-2">Datenschutzerklärung</h1>
-        <p className="text-muted-foreground text-sm mb-10">Stand: {new Date().getFullYear()}</p>
+        <p className="text-muted-foreground text-sm mb-10">Stand: 16. Mai 2026</p>
 
         <div className="space-y-8 text-sm text-muted-foreground leading-relaxed">
 
           <section>
-            <h2 className="font-bold text-foreground text-base mb-3">1. Verantwortliche Stelle</h2>
-            <p>Verantwortlich für die Datenverarbeitung auf dieser Website:</p>
-            <div className="mt-2 space-y-1">
-              <p className="font-semibold text-foreground">Lweb — Roberto Salvador</p>
-              <p>9475 Sevelen, Schweiz</p>
-              <p>E-Mail: <a href="mailto:info@lweb.ch" className="text-primary hover:underline">info@lweb.ch</a></p>
-            </div>
+            <p>
+              GrenzPreis („die App") hilft Personen in der Schweiz, Lebensmittelpreise im Vergleich zu Deutschland und Österreich besser einzuschätzen. Wir respektieren deine Privatsphäre und erheben grundsätzlich <strong className="text-foreground">keine personenbezogenen Daten</strong> — weder auf dieser Website noch in der App. Diese Erklärung beschreibt, welche Daten technisch verarbeitet werden, warum, und welche Rechte du hast.
+            </p>
           </section>
 
           <section>
-            <h2 className="font-bold text-foreground text-base mb-3">2. Erhobene Daten</h2>
-            <p>Beim Besuch dieser Website werden automatisch folgende technische Daten erfasst:</p>
+            <h2 className="font-bold text-foreground text-base mb-3">1. Wer wir sind</h2>
+            <p>
+              Betreiber der App und dieser Website ist <strong className="text-foreground">Lweb — Roberto Salvador</strong>, 9475 Sevelen, Schweiz. Für Fragen zum Datenschutz: <a href="mailto:info@lweb.ch" className="text-primary hover:underline">info@lweb.ch</a>.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-bold text-foreground text-base mb-3">2. Keine Erhebung personenbezogener Daten</h2>
+            <p>
+              GrenzPreis sammelt <strong className="text-foreground">keine personenbezogenen Daten</strong> über seine Nutzerinnen und Nutzer. Wir erfassen weder Name, Adresse, Telefonnummer, Kontakte, Fotos, Mikrofoneingaben noch deine genaue GPS-Position. Es gibt keine Werbung, keinen Verkauf und keine Weitergabe von Daten an Werbenetzwerke.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-bold text-foreground text-base mb-3">3. Daten, die in der App lokal bleiben</h2>
+            <p>Folgende Einstellungen werden ausschliesslich auf deinem Gerät gespeichert und nie an uns übertragen:</p>
             <ul className="list-disc list-inside mt-2 space-y-1">
-              <li>IP-Adresse (anonymisiert)</li>
-              <li>Browsertyp und -version</li>
-              <li>Besuchte Seiten und Navigationspfade</li>
-              <li>Datum und Uhrzeit des Zugriffs</li>
+              <li>Sprache, Heimatkanton/-stadt, bevorzugte Grenzstädte</li>
+              <li>Eingaben zu Benzinverbrauch und Fahrtkosten</li>
+              <li>Persönliche Einkaufsliste und gewählte Kategorien</li>
+              <li>Benachrichtigungs-Einstellungen</li>
             </ul>
-            <p className="mt-2">Diese Daten werden ausschliesslich zur Verbesserung der Website und zur statistischen Auswertung verwendet.</p>
+            <p className="mt-2">Diese Daten werden beim Deinstallieren der App vollständig entfernt.</p>
           </section>
 
           <section>
-            <h2 className="font-bold text-foreground text-base mb-3">3. Analyse-Tools (Vercel Analytics)</h2>
-            <p>Wir verwenden <strong className="text-foreground">Vercel Analytics</strong> zur anonymisierten Analyse des Website-Traffics. Vercel Analytics sammelt keine personenbezogenen Daten und verwendet keine Werbe-Cookies. Die Daten werden in aggregierter, anonymer Form gespeichert. Weitere Informationen: <a href="https://vercel.com/docs/analytics/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">vercel.com/docs/analytics/privacy-policy</a></p>
+            <h2 className="font-bold text-foreground text-base mb-3">4. Abo-Verwaltung (nur bei GrenzPreis Pro)</h2>
+            <p>
+              Wenn du ein Abo abschliesst, wird dieses über <strong className="text-foreground">RevenueCat</strong> sowie Apple bzw. Google abgewickelt. Wir erhalten lediglich eine anonyme Kunden-ID, das aktive Produkt sowie Kauf- und Ablaufdatum. <strong className="text-foreground">Wir sehen niemals deine Zahlungsdaten.</strong>
+            </p>
           </section>
 
           <section>
-            <h2 className="font-bold text-foreground text-base mb-3">4. Cookies</h2>
-            <p>Diese Website verwendet ausschliesslich technisch notwendige Cookies sowie anonymisierte Analyse-Cookies (Vercel Analytics). Es werden keine Werbe- oder Tracking-Cookies von Dritten eingesetzt.</p>
+            <h2 className="font-bold text-foreground text-base mb-3">5. KI-Suchen und Chatbot</h2>
+            <p>
+              Wenn du die KI-Preissuche oder den Chatbot nutzt, wird der Text deiner Anfrage zusammen mit der gewählten Route (z. B. „Zürich → Konstanz") an <strong className="text-foreground">OpenAI</strong> gesendet, um eine Antwort zu generieren. Wir speichern diese Anfragen <strong className="text-foreground">nicht</strong> auf unseren Servern. OpenAI verarbeitet sie gemäss API-Bedingungen und nutzt sie nicht zum Training.
+            </p>
           </section>
 
           <section>
-            <h2 className="font-bold text-foreground text-base mb-3">5. Datenweitergabe</h2>
-            <p>Personenbezogene Daten werden nicht an Dritte weitergegeben, verkauft oder vermietet. Eine Übermittlung an Dritte erfolgt ausschliesslich, wenn dies gesetzlich vorgeschrieben ist.</p>
+            <h2 className="font-bold text-foreground text-base mb-3">6. Absturzberichte</h2>
+            <p>
+              Apple und Google können anonyme Absturz- und Diagnoseberichte übermitteln, damit wir Fehler beheben können. Diese enthalten <strong className="text-foreground">keine</strong> personenbezogenen Informationen.
+            </p>
           </section>
 
           <section>
-            <h2 className="font-bold text-foreground text-base mb-3">6. Datenspeicherung</h2>
-            <p>Die Daten werden auf Servern von <strong className="text-foreground">Hostpoint AG</strong> (Schweiz) gespeichert. Alle Daten verbleiben in der Schweiz und unterliegen dem Schweizer Datenschutzgesetz (DSG).</p>
+            <h2 className="font-bold text-foreground text-base mb-3">7. Diese Website</h2>
+            <p>
+              Die Website grenzpreis-landing wird über Vercel ausgeliefert. Es werden keine Werbe- oder Tracking-Cookies eingesetzt. Optional kann <strong className="text-foreground">Vercel Analytics</strong> in anonymisierter, aggregierter Form Seitenaufrufe zählen — ohne Cookies und ohne personenbezogenen Bezug.
+            </p>
           </section>
 
           <section>
-            <h2 className="font-bold text-foreground text-base mb-3">7. Ihre Rechte</h2>
-            <p>Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung Ihrer gespeicherten Daten. Für Anfragen wenden Sie sich bitte an: <a href="mailto:info@lweb.ch" className="text-primary hover:underline">info@lweb.ch</a></p>
+            <h2 className="font-bold text-foreground text-base mb-3">8. Drittanbieter</h2>
+            <p>Die App nutzt folgende Dienste mit eigener Datenschutzerklärung:</p>
+            <ul className="list-disc list-inside mt-2 space-y-1">
+              <li>Apple App Store / Google Play — App-Distribution, In-App-Käufe, Absturzberichte</li>
+              <li>RevenueCat — Abo-Verwaltung</li>
+              <li>OpenAI — Verarbeitung von KI-Anfragen</li>
+            </ul>
           </section>
 
           <section>
-            <h2 className="font-bold text-foreground text-base mb-3">8. Änderungen</h2>
-            <p>Wir behalten uns vor, diese Datenschutzerklärung jederzeit zu aktualisieren. Die aktuelle Version ist stets auf dieser Seite abrufbar.</p>
+            <h2 className="font-bold text-foreground text-base mb-3">9. Speicherung und Aufbewahrung</h2>
+            <p>
+              Lokale Einstellungen verbleiben auf deinem Gerät. Abo-Daten werden bei RevenueCat so lange aufbewahrt, wie es Apple/Google sowie das Steuer- und Konsumentenschutzrecht verlangen. KI-Anfragen werden in Echtzeit verarbeitet und nicht von uns gespeichert.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="font-bold text-foreground text-base mb-3">10. Deine Rechte</h2>
+            <p>Gemäss Schweizer DSG und EU-DSGVO kannst du jederzeit:</p>
+            <ul className="list-disc list-inside mt-2 space-y-1">
+              <li>eine Kopie aller über dich verarbeiteten Daten anfordern,</li>
+              <li>die Berichtigung oder Löschung deiner Daten verlangen,</li>
+              <li>deine Zustimmung zu KI-Funktionen jederzeit widerrufen (durch Nichtnutzung der KI-Suche/des Chatbots),</li>
+              <li>eine Beschwerde beim Eidgenössischen Datenschutzbeauftragten (EDÖB) oder der zuständigen Behörde einreichen.</li>
+            </ul>
+            <p className="mt-2">Anfragen bitte an: <a href="mailto:info@lweb.ch" className="text-primary hover:underline">info@lweb.ch</a></p>
+          </section>
+
+          <section>
+            <h2 className="font-bold text-foreground text-base mb-3">11. Kinder</h2>
+            <p>Die App richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von Kindern.</p>
+          </section>
+
+          <section>
+            <h2 className="font-bold text-foreground text-base mb-3">12. Änderungen</h2>
+            <p>Wir können diese Erklärung bei Änderungen der App anpassen. Wesentliche Änderungen werden in der App angekündigt. Das Datum „Stand" oben spiegelt immer die aktuelle Version wider.</p>
           </section>
 
         </div>

@@ -88,7 +88,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "Fragen.",
       subtitle: "Alles, was du über GrenzPreis wissen musst.",
       items: [
-        { question: "Ist die App wirklich kostenlos?", answer: "Ja, GrenzPreis ist vollständig kostenlos. Kein Abo, keine versteckten Kosten, keine Werbung." },
+        { question: "Ist die App wirklich kostenlos?", answer: "Ja, die Grundfunktionen von GrenzPreis sind kostenlos – ohne versteckte Kosten und ohne Werbung. Für die KI-Suche nach aktuellen Preisen ist ein Abo erforderlich." },
         { question: "Welche Länder werden verglichen?", answer: "GrenzPreis vergleicht Supermarktpreise in der Schweiz, Deutschland und Österreich — inklusive Benzin, Mehrwertsteuer und Zollfreibeträgen." },
         { question: "Wie genau sind die Preise?", answer: "Alle Preise sind KI-geschätzte Richtwerte — keine offiziellen Preise der Supermärkte. Im Standard-Modus nutzt GrenzPreis vorprogrammierte Durchschnittswerte, im KI-Modus werden tagesaktuelle Schätzungen erstellt. Die tatsächlichen Preise im Laden können abweichen." },
         { question: "Wie wird die Benzinersparnis berechnet?", answer: "Du gibst deinen Kraftstoffverbrauch und den aktuellen Preis ein. GrenzPreis berechnet die Benzinkosten für die Hin- und Rückfahrt automatisch und zieht sie von der Bruttoersparnis ab." },
@@ -199,7 +199,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "frecuentes.",
       subtitle: "Todo lo que necesitas saber sobre GrenzPreis.",
       items: [
-        { question: "¿La app es realmente gratuita?", answer: "Sí, GrenzPreis es completamente gratuito. Sin suscripción, sin costes ocultos, sin publicidad." },
+        { question: "¿La app es realmente gratuita?", answer: "Sí, las funciones básicas de GrenzPreis son gratuitas — sin costes ocultos y sin publicidad. Para las búsquedas con IA de precios actualizados se necesita una suscripción." },
         { question: "¿Qué países se comparan?", answer: "GrenzPreis compara precios de supermercados en Suiza, Alemania y Austria — incluyendo gasolina, IVA y franquicias aduaneras." },
         { question: "¿Qué precisión tienen los precios?", answer: "Todos los precios son estimaciones orientativas calculadas por IA — no son precios oficiales de los supermercados. En modo estándar GrenzPreis usa valores medios preprogramados; en modo IA se generan estimaciones actualizadas. Los precios reales en tienda pueden variar." },
         { question: "¿Cómo se calcula el ahorro en gasolina?", answer: "Introduces tu consumo de combustible y el precio actual. GrenzPreis calcula automáticamente el coste del viaje de ida y vuelta y lo descuenta del ahorro bruto." },
@@ -310,7 +310,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "fréquentes.",
       subtitle: "Tout ce que vous devez savoir sur GrenzPreis.",
       items: [
-        { question: "L'app est-elle vraiment gratuite?", answer: "Oui, GrenzPreis est entièrement gratuit. Pas d'abonnement, pas de coûts cachés, pas de publicité." },
+        { question: "L'app est-elle vraiment gratuite?", answer: "Oui, les fonctions de base de GrenzPreis sont gratuites — sans coûts cachés et sans publicité. Un abonnement est nécessaire pour les recherches par IA des prix actuels." },
         { question: "Quels pays sont comparés?", answer: "GrenzPreis compare les prix des supermarchés en Suisse, en Allemagne et en Autriche — y compris l'essence, la TVA et les franchises douanières." },
         { question: "Quelle est la précision des prix?", answer: "Tous les prix sont des estimations indicatives calculées par IA — ce ne sont pas des prix officiels des supermarchés. En mode standard GrenzPreis utilise des moyennes préprogrammées, en mode IA des estimations actualisées sont générées. Les prix réels en magasin peuvent varier." },
         { question: "Comment l'économie en essence est-elle calculée?", answer: "Vous saisissez votre consommation de carburant et le prix actuel. GrenzPreis calcule automatiquement le coût du trajet aller-retour et le déduit de l'économie brute." },
@@ -421,7 +421,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "frequenti.",
       subtitle: "Tutto ciò che devi sapere su GrenzPreis.",
       items: [
-        { question: "L'app è davvero gratuita?", answer: "Sì, GrenzPreis è completamente gratuito. Nessun abbonamento, nessun costo nascosto, nessuna pubblicità." },
+        { question: "L'app è davvero gratuita?", answer: "Sì, le funzioni di base di GrenzPreis sono gratuite — senza costi nascosti e senza pubblicità. Per le ricerche con IA dei prezzi aggiornati è necessario un abbonamento." },
         { question: "Quali paesi vengono confrontati?", answer: "GrenzPreis confronta i prezzi dei supermercati in Svizzera, Germania e Austria — inclusi carburante, IVA e franchigie doganali." },
         { question: "Quanto sono precisi i prezzi?", answer: "Tutti i prezzi sono stime indicative calcolate dall'IA — non sono prezzi ufficiali dei supermercati. In modalità standard GrenzPreis usa medie preprogrammate, in modalità IA vengono generate stime aggiornate. I prezzi reali in negozio possono variare." },
         { question: "Come viene calcolato il risparmio sul carburante?", answer: "Inserisci il consumo di carburante e il prezzo attuale. GrenzPreis calcola automaticamente il costo del viaggio di andata e ritorno e lo deduce dal risparmio lordo." },
@@ -532,7 +532,7 @@ export const landingTranslations: Record<Lang, LandingT> = {
       titleHighlight: "questions.",
       subtitle: "Everything you need to know about GrenzPreis.",
       items: [
-        { question: "Is the app really free?", answer: "Yes, GrenzPreis is completely free. No subscription, no hidden costs, no ads." },
+        { question: "Is the app really free?", answer: "Yes, the core features of GrenzPreis are free — no hidden costs and no ads. A subscription is required for AI searches with up-to-date prices." },
         { question: "Which countries are compared?", answer: "GrenzPreis compares supermarket prices in Switzerland, Germany and Austria — including fuel, VAT and customs allowances." },
         { question: "How accurate are the prices?", answer: "All prices are AI-estimated guidance values — not official supermarket prices. In standard mode GrenzPreis uses pre-programmed averages; in AI mode up-to-date estimates are generated. Actual in-store prices may vary." },
         { question: "How is the fuel saving calculated?", answer: "You enter your fuel consumption and the current price. GrenzPreis automatically calculates the round-trip fuel cost and deducts it from the gross savings." },

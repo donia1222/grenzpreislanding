@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { Smartphone, ArrowLeft } from "lucide-react"
+import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/store-links"
 
 const galleryImages = [
   {
@@ -119,8 +120,12 @@ export function ScreenshotsGalleryModal() {
               Spare Zeit und Geld — alle Wochenangebote von Aligro und TopCC auf einen Blick. Nie wieder Prospekte wälzen.
             </p>
             <div className="flex items-center justify-center gap-4">
-              <img src="/shops/apple.png" alt="App Store" className="h-12 object-contain" />
-              <img src="/shops/google.png" alt="Google Play" className="h-12 object-contain" />
+              <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
+                <img src="/shops/apple.png" alt="App Store" className="h-12 object-contain hover:opacity-80 transition-opacity" />
+              </a>
+              <a href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
+                <img src="/shops/google.png" alt="Google Play" className="h-12 object-contain hover:opacity-80 transition-opacity" />
+              </a>
             </div>
           </div>
 

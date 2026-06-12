@@ -4,6 +4,7 @@ import { CheckCircle2, TrendingDown } from "lucide-react"
 import Link from "next/link"
 import { useLang } from "@/contexts/LanguageContext"
 import { landingTranslations } from "@/app/landing-translations"
+import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/store-links"
 
 const partners = [
   { name: "Deutschland", flag: "🇩🇪" },
@@ -38,10 +39,10 @@ export function HeroSection() {
             </div>
 
             <div className="flex flex-row gap-3">
-              <Link href="#cta">
+              <Link href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
                 <img src="/shops/apple.png" alt="App Store" className="h-16 w-auto object-contain hover:opacity-80 transition-opacity rounded-[10px]" />
               </Link>
-              <Link href="#cta">
+              <Link href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
                 <img src="/shops/google.png" alt="Google Play" className="h-16 w-auto object-contain hover:opacity-80 transition-opacity rounded-[10px]" />
               </Link>
             </div>

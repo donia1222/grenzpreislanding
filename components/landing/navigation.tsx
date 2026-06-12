@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Menu, X, Globe, Check } from "lucide-react"
 import { useLang, type Lang } from "@/contexts/LanguageContext"
 import { landingTranslations } from "@/app/landing-translations"
+import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/store-links"
 
 const languages: { code: Lang; flag: string; label: string }[] = [
   { code: "de", flag: "🇩🇪", label: "Deutsch" },
@@ -163,10 +164,10 @@ export function Navigation() {
             </button>
           ))}
           <div className="mt-6 px-4 flex flex-col gap-3">
-            <Link href="#cta" onClick={() => setOpen(false)}>
+            <Link href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
               <img src="/shops/apple.png" alt="App Store" className="h-9 w-auto rounded-[8px] hover:opacity-80 transition-opacity" />
             </Link>
-            <Link href="#cta" onClick={() => setOpen(false)}>
+            <Link href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
               <img src="/shops/google.png" alt="Google Play" className="h-9 w-auto rounded-[8px] hover:opacity-80 transition-opacity" />
             </Link>
           </div>

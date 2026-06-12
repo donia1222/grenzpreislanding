@@ -5,6 +5,7 @@ import Link from "next/link"
 import { useLang } from "@/contexts/LanguageContext"
 import { landingTranslations } from "@/app/landing-translations"
 import { useInView, fi } from "@/hooks/use-in-view"
+import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/store-links"
 
 export function CTASection() {
   const { lang } = useLang()
@@ -29,10 +30,10 @@ export function CTASection() {
         </p>
 
         <div className="flex justify-center gap-4 mb-10" style={fi(inView, 2)}>
-          <Link href="#">
+          <Link href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
             <img src="/shops/apple.png" alt="App Store" className="h-14 w-auto object-contain hover:opacity-80 transition-opacity rounded-[10px]" />
           </Link>
-          <Link href="#">
+          <Link href={GOOGLE_PLAY_URL} target="_blank" rel="noopener noreferrer">
             <img src="/shops/google.png" alt="Google Play" className="h-14 w-auto object-contain hover:opacity-80 transition-opacity rounded-[10px]" />
           </Link>
         </div>
